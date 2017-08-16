@@ -82,7 +82,7 @@ $DRUSH_CMD -y en devel
 $DRUSH_CMD -y pm-uninstall search
 $DRUSH_CMD en -y search_api
 composer require "drupal/search_api_solr"
-$DRUSH_CMD en -y search_api_solr
+$DRUSH_CMD en search_api_solr
 $DRUSH_CMD en -y facets
 
 # Set default theme to carapace (and download dependencies, will composer-ize later)
