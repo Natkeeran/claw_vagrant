@@ -81,7 +81,6 @@ $DRUSH_CMD -y en devel
 ## https://www.drupal.org/node/2613470
 $DRUSH_CMD -y pm-uninstall search
 $DRUSH_CMD en -y search_api
-composer require "drupal/search_api_solr" "drupal/facets"
 $DRUSH_CMD en -y search_api_solr
 $DRUSH_CMD en -y facets
 
