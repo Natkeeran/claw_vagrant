@@ -17,7 +17,7 @@ service apache2 reload
 cd /var/www/html
 
 # Download Drupal
-git clone https://github.com/Islandora-CLAW/drupal-project drupal
+git clone https://github.com/Natkeeran/drupal-project drupal
 cd "$DRUPAL_HOME"
 composer install
 
