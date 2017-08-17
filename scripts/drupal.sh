@@ -81,10 +81,9 @@ $DRUSH_CMD -y en devel
 ## https://www.drupal.org/node/2613470
 $DRUSH_CMD -y pm-uninstall search
 $DRUSH_CMD en -y search_api
-composer require "drupal/search_api_solr"
-$DRUSH_CMD en search_api_solr
-$DRUSH_CMD dl facets-8.x-1.0-alpha11
-$DRUSH_CMD -y en facets
+composer require "drupal/search_api_solr drupal/facets"
+$DRUSH_CMD en -y search_api_solr
+$DRUSH_CMD en -y facets
 
 # Set default theme to carapace (and download dependencies, will composer-ize later)
 cd $DRUPAL_HOME
